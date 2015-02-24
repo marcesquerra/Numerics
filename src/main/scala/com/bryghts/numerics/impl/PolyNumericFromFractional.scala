@@ -9,4 +9,6 @@ class PolyNumericFromFractional[A, B, R](
                                                                                   with FractionalPolyNumeric[A, B, R]
 {
     def div     (a: A, b: B): R   = num.div     (fromA(a), fromB(b))
+
+    override def numeric = num
 }

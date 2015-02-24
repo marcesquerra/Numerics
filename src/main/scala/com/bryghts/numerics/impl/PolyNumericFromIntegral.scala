@@ -9,4 +9,7 @@ class PolyNumericFromIntegral[A, B, R](
 {
     def div     (a: A, b: B): R   = num.quot     (fromA(a), fromB(b))
     def rem     (a: A, b: B): R   = num.rem      (fromA(a), fromB(b))
+
+
+    override def numeric = num
 }

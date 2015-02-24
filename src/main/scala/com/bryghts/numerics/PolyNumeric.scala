@@ -16,16 +16,18 @@ trait PolyNumeric[A, B, R] {
     def max    (x: A, y: B): R
     def min    (x: A, y: B): R
 
+    def numeric:Numeric[R]
 }
 
 trait IntegralPolyNumeric[A, B, R] extends PolyNumeric[A, B, R] {
 
     def rem    (x: A, y: B): R
+    override def numeric:Integral[R]
 
 }
 
 trait FractionalPolyNumeric[A, B, R] extends PolyNumeric[A, B, R] {
-
+    override def numeric:Fractional[R]
 }
 
 object PolyNumeric {
