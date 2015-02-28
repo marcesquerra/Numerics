@@ -24,7 +24,9 @@ val nameLiteral = "Numerics"
 
 organization := s"com.bryghts.${nameLiteral.toLowerCase}"
 
-scalaVersion := "2.10.3"
+scalaVersion := "2.11.5"
+
+crossScalaVersions := Seq("2.8.2", "2.9.3", "2.10.4", "2.11.5")
 
 git.gitRemoteRepo := s"git@github.com:marcesquerra/$nameLiteral.git"
 
