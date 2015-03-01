@@ -2,9 +2,7 @@ package com.bryghts.numerics
 package impl
 
 
-trait PolyNumericFromNumeric[A, B, RR] extends PolyNumeric[A, B] {
-
-    type R = RR
+trait PolyNumericFromNumeric[A, B, R] extends PolyNumeric[A, B, R] {
 
     protected val num: scala.Numeric[R]
 
