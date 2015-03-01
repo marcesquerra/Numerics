@@ -45,13 +45,13 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <span class="name">IntegralPolyNumeric</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>, <span name="R">R</span>]</span><span class="result"> extends <a href="PolyNumeric.html" class="extype" name="com.bryghts.numerics.PolyNumeric">PolyNumeric</a>[<span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.A">A</span>, <span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.B">B</span>, <span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.R">R</span>]</span>
+        <span class="name">IntegralPolyNumeric</span><span class="tparams">[<span name="A">A</span>, <span name="B">B</span>]</span><span class="result"> extends <a href="PolyNumeric.html" class="extype" name="com.bryghts.numerics.PolyNumeric">PolyNumeric</a>[<span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.A">A</span>, <span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.B">B</span>]</span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="PolyNumeric.html" class="extype" name="com.bryghts.numerics.PolyNumeric">PolyNumeric</a>[<span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.A">A</span>, <span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.B">B</span>, <span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.R">R</span>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="PolyNumeric.html" class="extype" name="com.bryghts.numerics.PolyNumeric">PolyNumeric</a>[<span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.A">A</span>, <span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.B">B</span>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div><div class="toggleContainer block">
             <span class="toggle">Known Subclasses</span>
             <div class="subClasses hiddenContent"><a href="impl/BigIntExtendedNumeric$.html" class="extype" name="com.bryghts.numerics.impl.BigIntExtendedNumeric">BigIntExtendedNumeric</a>, <a href="impl/ByteExtendedNumeric$.html" class="extype" name="com.bryghts.numerics.impl.ByteExtendedNumeric">ByteExtendedNumeric</a>, <a href="impl/CharExtendedNumeric$.html" class="extype" name="com.bryghts.numerics.impl.CharExtendedNumeric">CharExtendedNumeric</a>, <a href="ExtendedIntegral.html" class="extype" name="com.bryghts.numerics.ExtendedIntegral">ExtendedIntegral</a>, <a href="impl/IntExtendedNumeric$.html" class="extype" name="com.bryghts.numerics.impl.IntExtendedNumeric">IntExtendedNumeric</a>, <a href="impl/LongExtendedNumeric$.html" class="extype" name="com.bryghts.numerics.impl.LongExtendedNumeric">LongExtendedNumeric</a>, <a href="impl/PolyNumericFromIntegral.html" class="extype" name="com.bryghts.numerics.impl.PolyNumericFromIntegral">PolyNumericFromIntegral</a>, <a href="impl/ShortExtendedNumeric$.html" class="extype" name="com.bryghts.numerics.impl.ShortExtendedNumeric">ShortExtendedNumeric</a></div>
@@ -92,7 +92,27 @@
         <div id="allMembers">
         
 
-        
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="com.bryghts.numerics.PolyNumeric.R" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="R"></a>
+      <a id="R:R"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">R</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.bryghts.numerics.IntegralPolyNumeric@R" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PolyNumeric.html" class="extype" name="com.bryghts.numerics.PolyNumeric">PolyNumeric</a></dd></dl></div>
+    </li></ol>
+            </div>
 
         <div id="values" class="values members">
               <h3>Abstract Value Members</h3>
@@ -114,7 +134,7 @@
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PolyNumeric.html" class="extype" name="com.bryghts.numerics.PolyNumeric">PolyNumeric</a></dd></dl></div>
     </li><li name="com.bryghts.numerics.PolyNumeric#div" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="div(x:A,y:B):R"></a>
+      <a id="div(x:A,y:B):PolyNumeric.this.R"></a>
       <a id="div(A,B):R"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -122,16 +142,16 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">div</span><span class="params">(<span name="x">x: <span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.A">A</span></span>, <span name="y">y: <span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.B">B</span></span>)</span><span class="result">: <span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.R">R</span></span>
+        <span class="name">div</span><span class="params">(<span name="x">x: <span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.A">A</span></span>, <span name="y">y: <span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.B">B</span></span>)</span><span class="result">: <a href="#R" class="extmbr" name="com.bryghts.numerics.IntegralPolyNumeric.R">R</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#com.bryghts.numerics.IntegralPolyNumeric@div(x:A,y:B):R" title="Permalink" target="_top">
+      <a href="../../../index.html#com.bryghts.numerics.IntegralPolyNumeric@div(x:A,y:B):PolyNumeric.this.R" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PolyNumeric.html" class="extype" name="com.bryghts.numerics.PolyNumeric">PolyNumeric</a></dd></dl></div>
     </li><li name="com.bryghts.numerics.PolyNumeric#max" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="max(x:A,y:B):R"></a>
+      <a id="max(x:A,y:B):PolyNumeric.this.R"></a>
       <a id="max(A,B):R"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -139,16 +159,16 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">max</span><span class="params">(<span name="x">x: <span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.A">A</span></span>, <span name="y">y: <span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.B">B</span></span>)</span><span class="result">: <span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.R">R</span></span>
+        <span class="name">max</span><span class="params">(<span name="x">x: <span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.A">A</span></span>, <span name="y">y: <span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.B">B</span></span>)</span><span class="result">: <a href="#R" class="extmbr" name="com.bryghts.numerics.IntegralPolyNumeric.R">R</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#com.bryghts.numerics.IntegralPolyNumeric@max(x:A,y:B):R" title="Permalink" target="_top">
+      <a href="../../../index.html#com.bryghts.numerics.IntegralPolyNumeric@max(x:A,y:B):PolyNumeric.this.R" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PolyNumeric.html" class="extype" name="com.bryghts.numerics.PolyNumeric">PolyNumeric</a></dd></dl></div>
     </li><li name="com.bryghts.numerics.PolyNumeric#min" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="min(x:A,y:B):R"></a>
+      <a id="min(x:A,y:B):PolyNumeric.this.R"></a>
       <a id="min(A,B):R"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -156,16 +176,16 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">min</span><span class="params">(<span name="x">x: <span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.A">A</span></span>, <span name="y">y: <span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.B">B</span></span>)</span><span class="result">: <span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.R">R</span></span>
+        <span class="name">min</span><span class="params">(<span name="x">x: <span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.A">A</span></span>, <span name="y">y: <span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.B">B</span></span>)</span><span class="result">: <a href="#R" class="extmbr" name="com.bryghts.numerics.IntegralPolyNumeric.R">R</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#com.bryghts.numerics.IntegralPolyNumeric@min(x:A,y:B):R" title="Permalink" target="_top">
+      <a href="../../../index.html#com.bryghts.numerics.IntegralPolyNumeric@min(x:A,y:B):PolyNumeric.this.R" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PolyNumeric.html" class="extype" name="com.bryghts.numerics.PolyNumeric">PolyNumeric</a></dd></dl></div>
     </li><li name="com.bryghts.numerics.PolyNumeric#minus" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="minus(x:A,y:B):R"></a>
+      <a id="minus(x:A,y:B):PolyNumeric.this.R"></a>
       <a id="minus(A,B):R"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -173,16 +193,16 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">minus</span><span class="params">(<span name="x">x: <span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.A">A</span></span>, <span name="y">y: <span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.B">B</span></span>)</span><span class="result">: <span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.R">R</span></span>
+        <span class="name">minus</span><span class="params">(<span name="x">x: <span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.A">A</span></span>, <span name="y">y: <span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.B">B</span></span>)</span><span class="result">: <a href="#R" class="extmbr" name="com.bryghts.numerics.IntegralPolyNumeric.R">R</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#com.bryghts.numerics.IntegralPolyNumeric@minus(x:A,y:B):R" title="Permalink" target="_top">
+      <a href="../../../index.html#com.bryghts.numerics.IntegralPolyNumeric@minus(x:A,y:B):PolyNumeric.this.R" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PolyNumeric.html" class="extype" name="com.bryghts.numerics.PolyNumeric">PolyNumeric</a></dd></dl></div>
     </li><li name="com.bryghts.numerics.IntegralPolyNumeric#numeric" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="numeric:Integral[R]"></a>
+      <a id="numeric:Integral[IntegralPolyNumeric.this.R]"></a>
       <a id="numeric:Integral[R]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -190,16 +210,16 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">numeric</span><span class="result">: <span class="extype" name="scala.Integral">Integral</span>[<span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.R">R</span>]</span>
+        <span class="name">numeric</span><span class="result">: <span class="extype" name="scala.Integral">Integral</span>[<a href="#R" class="extmbr" name="com.bryghts.numerics.IntegralPolyNumeric.R">R</a>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#com.bryghts.numerics.IntegralPolyNumeric@numeric:Integral[R]" title="Permalink" target="_top">
+      <a href="../../../index.html#com.bryghts.numerics.IntegralPolyNumeric@numeric:Integral[IntegralPolyNumeric.this.R]" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="com.bryghts.numerics.IntegralPolyNumeric">IntegralPolyNumeric</a> → <a href="PolyNumeric.html" class="extype" name="com.bryghts.numerics.PolyNumeric">PolyNumeric</a></dd></dl></div>
     </li><li name="com.bryghts.numerics.PolyNumeric#plus" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="plus(a:A,b:B):R"></a>
+      <a id="plus(a:A,b:B):PolyNumeric.this.R"></a>
       <a id="plus(A,B):R"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -207,16 +227,16 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">plus</span><span class="params">(<span name="a">a: <span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.A">A</span></span>, <span name="b">b: <span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.B">B</span></span>)</span><span class="result">: <span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.R">R</span></span>
+        <span class="name">plus</span><span class="params">(<span name="a">a: <span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.A">A</span></span>, <span name="b">b: <span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.B">B</span></span>)</span><span class="result">: <a href="#R" class="extmbr" name="com.bryghts.numerics.IntegralPolyNumeric.R">R</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#com.bryghts.numerics.IntegralPolyNumeric@plus(a:A,b:B):R" title="Permalink" target="_top">
+      <a href="../../../index.html#com.bryghts.numerics.IntegralPolyNumeric@plus(a:A,b:B):PolyNumeric.this.R" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="PolyNumeric.html" class="extype" name="com.bryghts.numerics.PolyNumeric">PolyNumeric</a></dd></dl></div>
     </li><li name="com.bryghts.numerics.IntegralPolyNumeric#rem" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="rem(x:A,y:B):R"></a>
+      <a id="rem(x:A,y:B):IntegralPolyNumeric.this.R"></a>
       <a id="rem(A,B):R"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -224,16 +244,16 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">rem</span><span class="params">(<span name="x">x: <span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.A">A</span></span>, <span name="y">y: <span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.B">B</span></span>)</span><span class="result">: <span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.R">R</span></span>
+        <span class="name">rem</span><span class="params">(<span name="x">x: <span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.A">A</span></span>, <span name="y">y: <span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.B">B</span></span>)</span><span class="result">: <a href="#R" class="extmbr" name="com.bryghts.numerics.IntegralPolyNumeric.R">R</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#com.bryghts.numerics.IntegralPolyNumeric@rem(x:A,y:B):R" title="Permalink" target="_top">
+      <a href="../../../index.html#com.bryghts.numerics.IntegralPolyNumeric@rem(x:A,y:B):IntegralPolyNumeric.this.R" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
       
     </li><li name="com.bryghts.numerics.PolyNumeric#times" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="times(x:A,y:B):R"></a>
+      <a id="times(x:A,y:B):PolyNumeric.this.R"></a>
       <a id="times(A,B):R"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -241,10 +261,10 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">times</span><span class="params">(<span name="x">x: <span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.A">A</span></span>, <span name="y">y: <span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.B">B</span></span>)</span><span class="result">: <span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.R">R</span></span>
+        <span class="name">times</span><span class="params">(<span name="x">x: <span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.A">A</span></span>, <span name="y">y: <span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.B">B</span></span>)</span><span class="result">: <a href="#R" class="extmbr" name="com.bryghts.numerics.IntegralPolyNumeric.R">R</a></span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#com.bryghts.numerics.IntegralPolyNumeric@times(x:A,y:B):R" title="Permalink" target="_top">
+      <a href="../../../index.html#com.bryghts.numerics.IntegralPolyNumeric@times(x:A,y:B):PolyNumeric.this.R" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
     </span>
@@ -685,7 +705,7 @@
 
         <div id="inheritedMembers">
         <div class="parent" name="com.bryghts.numerics.PolyNumeric">
-              <h3>Inherited from <a href="PolyNumeric.html" class="extype" name="com.bryghts.numerics.PolyNumeric">PolyNumeric</a>[<span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.A">A</span>, <span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.B">B</span>, <span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.R">R</span>]</h3>
+              <h3>Inherited from <a href="PolyNumeric.html" class="extype" name="com.bryghts.numerics.PolyNumeric">PolyNumeric</a>[<span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.A">A</span>, <span class="extype" name="com.bryghts.numerics.IntegralPolyNumeric.B">B</span>]</h3>
             </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">
