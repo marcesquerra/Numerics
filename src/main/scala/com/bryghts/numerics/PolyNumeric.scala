@@ -1,6 +1,9 @@
 package com.bryghts.numerics
 
-trait PolyNumeric[A, B, R] {
+trait PolyNumericFor[A, B]
+
+trait PolyNumeric[A, B, R] extends PolyNumericFor[A, B]
+{
 
     def plus  (a: A, b: B): R
     def minus (x: A, y: B): R
