@@ -15,15 +15,15 @@ package object numerics {
     implicit val BigIntExtendedNumeric     = impl.BigIntExtendedNumeric
     implicit val BigDecimalExtendedNumeric = impl.BigDecimalExtendedNumeric
 
-    implicit val (implicitCharBytePolynumeric,         implicitByteCharPolynumeric)          = PolyNumeric.Integral  .forBothDirections[Char,       Byte]               (_.toChar)
-    implicit val (implicitShortBytePolynumeric,        implicitByteShortPolynumeric)         = PolyNumeric.Integral  .forBothDirections[Short,      Byte]               (_.toShort)
+    implicit val (implicitCharBytePolynumeric,         implicitByteCharPolynumeric)          = PolyNumeric.Integral  .forBothDirections[Char,       Byte, Int]          (_.toInt, _.toInt)
+    implicit val (implicitShortBytePolynumeric,        implicitByteShortPolynumeric)         = PolyNumeric.Integral  .forBothDirections[Short,      Byte, Int]          (_.toInt, _.toInt)
     implicit val (implicitIntBytePolynumeric,          implicitByteIntPolynumeric)           = PolyNumeric.Integral  .forBothDirections[Int,        Byte]               (_.toInt)
     implicit val (implicitLongBytePolynumeric,         implicitByteLongPolynumeric)          = PolyNumeric.Integral  .forBothDirections[Long,       Byte]               (_.toLong)
     implicit val (implicitFloatBytePolynumeric,        implicitByteFloatPolynumeric)         = PolyNumeric.Fractional.forBothDirections[Float,      Byte]               (_.toFloat)
     implicit val (implicitDoubleBytePolynumeric,       implicitByteDoublePolynumeric)        = PolyNumeric.Fractional.forBothDirections[Double,     Byte]               (_.toDouble)
     implicit val (implicitBigIntBytePolynumeric,       implicitByteBigIntPolynumeric)        = PolyNumeric.Integral  .forBothDirections[BigInt,     Byte]               (BigInt(_))
     implicit val (implicitBigDecimalBytePolynumeric,   implicitByteBigDecimalPolynumeric)    = PolyNumeric.Fractional.forBothDirections[BigDecimal, Byte]               (BigDecimal(_))
-    implicit val (implicitShortCharPolynumeric,        implicitCharShortPolynumeric)         = PolyNumeric.Integral  .forBothDirections[Short,      Char]               (_.toShort)
+    implicit val (implicitShortCharPolynumeric,        implicitCharShortPolynumeric)         = PolyNumeric.Integral  .forBothDirections[Short,      Char, Int]          (_.toInt, _.toInt)
     implicit val (implicitIntCharPolynumeric,          implicitCharIntPolynumeric)           = PolyNumeric.Integral  .forBothDirections[Int,        Char]               (_.toInt)
     implicit val (implicitLongCharPolynumeric,         implicitCharLongPolynumeric)          = PolyNumeric.Integral  .forBothDirections[Long,       Char]               (_.toLong)
     implicit val (implicitFloatCharPolynumeric,        implicitCharFloatPolynumeric)         = PolyNumeric.Fractional.forBothDirections[Float,      Char]               (_.toFloat)
