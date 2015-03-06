@@ -52,4 +52,13 @@ package object numerics {
     implicit val (implicitBigDecimalDoublePolynumeric, implicitDoubleBigDecimalPolynumeric)  = PolyNumeric.Fractional.forBothDirections[BigDecimal, Double]             (BigDecimal(_))
     implicit val (implicitBigDecimalBigIntPolynumeric, implicitBigIntBigDecimalPolynumeric)  = PolyNumeric.Fractional.forBothDirections[BigDecimal, BigInt]             (BigDecimal(_))
 
+    implicit val implicitBytePolynumeric       = PolyNumeric.Integral  [Byte,       Byte,       Int]        (_.toInt,  _.toInt)
+    implicit val implicitCharPolynumeric       = PolyNumeric.Integral  [Char,       Char,       Int]        (_.toInt,  _.toInt)
+    implicit val implicitShortPolynumeric      = PolyNumeric.Integral  [Short,      Short,      Int]        (_.toInt,  _.toInt)
+    implicit val implicitIntPolynumeric        = PolyNumeric.Integral  [Int,        Int,        Int]        (identity, identity)
+    implicit val implicitLongPolynumeric       = PolyNumeric.Integral  [Long,       Long,       Long]       (identity, identity)
+    implicit val implicitFloatPolynumeric      = PolyNumeric.Fractional[Float,      Float,      Float]      (identity, identity)
+    implicit val implicitDoublePolynumeric     = PolyNumeric.Fractional[Double,     Double,     Double]     (identity, identity)
+    implicit val implicitBigIntPolynumeric     = PolyNumeric.Integral  [BigInt,     BigInt,     BigInt]     (identity, identity)
+    implicit val implicitBigDecimalPolynumeric = PolyNumeric.Fractional[BigDecimal, BigDecimal, BigDecimal] (identity, identity)
 }
