@@ -41,7 +41,7 @@ package object numerics {
     implicit val (implicitDoubleIntPolynumeric,        implicitIntDoublePolynumeric)         = PolyNumeric.Fractional.forBothDirections[Double,     Int]                (_.toDouble)
     implicit val (implicitBigIntIntPolynumeric,        implicitIntBigIntPolynumeric)         = PolyNumeric.Integral  .forBothDirections[BigInt,     Int]                (BigInt(_))
     implicit val (implicitBigDecimalIntPolynumeric,    implicitIntBigDecimalPolynumeric)     = PolyNumeric.Fractional.forBothDirections[BigDecimal, Int]                (BigDecimal(_))
-    implicit val (implicitFloatLongPolynumeric,        implicitLongFloatPolynumeric)         = PolyNumeric.Fractional.forBothDirections[Float,      Long]               (_.toFloat)
+    implicit val (implicitFloatLongPolynumeric,        implicitLongFloatPolynumeric)         = PolyNumeric.Fractional.forBothDirections[Float,      Long, Double]       (_.toDouble, _.toDouble)
     implicit val (implicitDoubleLongPolynumeric,       implicitLongDoublePolynumeric)        = PolyNumeric.Fractional.forBothDirections[Double,     Long]               (_.toDouble)
     implicit val (implicitBigIntLongPolynumeric,       implicitLongBigIntPolynumeric)        = PolyNumeric.Integral  .forBothDirections[BigInt,     Long]               (BigInt(_))
     implicit val (implicitBigDecimalLongPolynumeric,   implicitLongBigDecimalPolynumeric)    = PolyNumeric.Fractional.forBothDirections[BigDecimal, Long]               (BigDecimal(_))
